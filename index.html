@@ -90,7 +90,7 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">CrowdEraser: Generating Humanless Environment Walkthroughs from Egocentric Walking Tour Videos</h1>
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block">
+            <span class="author-block">
               <a href="https://yujinh22.github.io/">Yujin Ham</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/jk-junhokim/">Junho Kim</a><sup>1,2*</sup>,</span>
@@ -98,8 +98,8 @@
               <a href="https://vivekboominathan.com/">Vivek Boominathan</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://www.guhabalakrishnan.com/">Guha Balakrishnan</a><sup>1</sup>
-            </span> -->
-            <span class="author-block">
+            </span>
+            <!-- <span class="author-block">
               <a href="LINK_TO_A">author A</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="LINK_TO_B">author B</a><sup>1,2*</sup>,</span>
@@ -107,7 +107,7 @@
               <a href="LINK_TO_C">author C</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="LINK_TO_D">author D</a><sup>1</sup>
-            </span>
+            </span> -->
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -260,13 +260,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Egocentric "walking tour" videos provide a rich source of image data to develop rich and diverse visual models of environments around the world. However, the significant presence of humans in frames of these videos due to crowds and eye-level camera perspectives mitigates their usefulness in environment modeling applications. 
+            Egocentric walking tour videos are a rich source of visual data for modeling real-world environments, but their usefulness is limited by frequent human occlusions from crowds and eye-level viewpoints. We address this by developing a generative method to realistically remove humans and their shadows from such videos.
           </p>
           <p>
-            We focus on addressing this challenge by developing a generative algorithm that can realistically remove (i.e., inpaint) humans and their associated shadow effects from walking tour videos. Key to our approach is the construction of a rich semi-synthetic dataset of video clip pairs to train this generative model. Each pair in the dataset consists of an environment-only background clip, and a composite clip of walking humans with simulated shadows overlaid on the background. 
-          </p>
-          <p>
-            We randomly sourced both foreground and background components from real egocentric walking videos around the world to maintain visual diversity. We then used this dataset to fine-tune the state-of-the-art Casper video diffusion model for object and effects inpainting, and demonstrate that the resulting model performs far better than Casper both qualitatively and quantitatively at removing humans from walking tour clips with significant human presence and complex backgrounds. Finally, we show that the resulting generated clips can be used to build successful 3D Gaussian Splatting models of urban locations which was otherwise not possible from the original clips.
+            We focus on addressing this challenge by developing a generative algorithm that can realistically remove (i.e., inpaint) humans and their associated shadow effects from walking tour videos. Key to our approach is the construction of a rich semi-synthetic dataset of video clip pairs to train this generative model. We then used this dataset to fine-tune the state-of-the-art Casper video diffusion model for object and effects inpainting, and demonstrate that the resulting model performs far better than Casper both qualitatively and quantitatively at removing humans from walking tour clips with significant human presence and complex backgrounds.
           </p>
         </div>
       </div>
