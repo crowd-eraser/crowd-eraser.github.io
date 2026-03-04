@@ -39,17 +39,7 @@ $(document).ready(function() {
     }
 
 		// Initialize all div with carousel class
-    // var carousels = bulmaCarousel.attach('.carousel', options);
-    var carousels = bulmaCarousel.attach('.carousel', {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      breakpoints: [
-        { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
-        { changePoint: 640, slidesToShow: 1, slidesToScroll: 1 },
-        { changePoint: 768, slidesToShow: 1, slidesToScroll: 1 },
-        { changePoint: 9999, slidesToShow: 1, slidesToScroll: 1 }
-      ]
-    });
+    var carousels = bulmaCarousel.attach('.carousel', options);
 
     // Loop on each carousel initialized
     for(var i = 0; i < carousels.length; i++) {
