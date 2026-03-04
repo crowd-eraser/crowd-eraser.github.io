@@ -155,3 +155,12 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.data-pipeline-img {
+  margin-bottom: 1rem;
+}
+
+figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
