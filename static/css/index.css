@@ -115,18 +115,11 @@ body {
 }
 
 .results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  padding: 0;
-  font-size: 0;
   flex: 0 0 100%;
   width: 100%;
 }
 
 .results-carousel video {
-  margin: 0;
   width: 100%;
   height: auto;
   display: block;
