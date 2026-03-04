@@ -114,24 +114,13 @@ body {
   overflow: hidden;
 }
 
-/* .results-carousel .item {
+.results-carousel .item {
   margin: 5px;
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
-} */
-
-#results-carousel .item {
-  flex: 0 0 100%;           /* <-- one item per view */
-  scroll-snap-align: start;
-}
-
-#results-carousel video {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .results-carousel video {
