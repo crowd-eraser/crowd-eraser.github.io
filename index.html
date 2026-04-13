@@ -190,11 +190,43 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Egocentric walking tour videos are a rich source of visual data for modeling real-world environments, but their usefulness is limited by frequent human occlusions from crowds and eye-level viewpoints. We address this by developing a generative method to realistically remove humans and their shadows from such videos.
+          </p>
+          <p>
+            We focus on addressing this challenge by developing a generative algorithm that can realistically remove (i.e., inpaint) humans and their associated shadow effects from walking tour videos. Key to our approach is the construction of a rich semi-synthetic dataset of video clip pairs to train this generative model. We then used this dataset to fine-tune the state-of-the-art Casper video diffusion model for object and effects inpainting, and demonstrate that the resulting model performs far better than Casper both qualitatively and quantitatively at removing humans from walking tour clips with significant human presence and complex backgrounds.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
 
 <section class="hero is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-3">Comparisons on Crowd Removal</h2>
+      <!--/ Comparison videos. -->
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline width="300%">
@@ -220,48 +252,17 @@
                     type="video/mp4">
           </video>
         </div>
+        <!--/ Comparison videos. -->
       </div>
     </div>
   </div>
 </section>
 
-<!--/ Abstract. -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Egocentric walking tour videos are a rich source of visual data for modeling real-world environments, but their usefulness is limited by frequent human occlusions from crowds and eye-level viewpoints. We address this by developing a generative method to realistically remove humans and their shadows from such videos.
-          </p>
-          <p>
-            We focus on addressing this challenge by developing a generative algorithm that can realistically remove (i.e., inpaint) humans and their associated shadow effects from walking tour videos. Key to our approach is the construction of a rich semi-synthetic dataset of video clip pairs to train this generative model. We then used this dataset to fine-tune the state-of-the-art Casper video diffusion model for object and effects inpainting, and demonstrate that the resulting model performs far better than Casper both qualitatively and quantitatively at removing humans from walking tour clips with significant human presence and complex backgrounds.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Data Construction Pipeline. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-10">
+        <!-- Data Construction Pipeline. -->
         <h2 class="title is-3">Data Construction Pipeline</h2>
         <div class="content has-text-justified">
           <img src="./assets/images/data-pipeline.png" alt="Data Construction Pipeline Diagram" class="blend-img-background data-pipeline-img"/>
@@ -273,11 +274,12 @@
             indicate pivot points).
           </figcaption>
         </div>
+        <!-- Data Construction Pipeline. -->
       </div>
     </div>
-    <!-- Data Construction Pipeline. -->
   </div>
 </section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
