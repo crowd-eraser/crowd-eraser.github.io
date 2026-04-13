@@ -260,20 +260,30 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    
+    <!-- Title -->
     <div class="columns is-centered has-text-centered">
-      <!-- Data Construction Pipeline. -->
-      <h2 class="title is-3">Data Construction Pipeline</h2>
-      <div class="content has-text-justified">
-        <img src="./assets/images/data-pipeline.png" alt="Data Construction Pipeline Diagram" class="blend-img-background data-pipeline-img"/>
+      <div class="column is-10">
+        <h2 class="title is-3">Data Construction Pipeline</h2>
+      </div>
+    </div>
+
+    <!-- Figure -->
+    <div class="container is-fluid">
+    <div class="content has-text-justified">
+      <figure>
+        <img src="./assets/images/data-pipeline.png"
+             alt="Data Construction Pipeline Diagram"
+             class="blend-img-background data-pipeline-img"
+             style="width: 100%;"/>
         
-        <figcaption>
+        <figcaption style="max-width: 900px; margin: 0 auto;">
           Overview of our data construction pipeline. Both background and foreground clips are sourced from real “walking tour”
           videos. The foreground clips were selected to ensure an approximately uniform distribution across different Crowd% levels. For each
           instance, we generate a soft shadow with randomized strength and angle by applying an affine transform to the human mask (red dots
           indicate pivot points).
         </figcaption>
-      </div>
-      <!-- Data Construction Pipeline. -->
+      </figure>
     </div>
   </div>
 </section>
