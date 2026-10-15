@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OSN Connection Test</title>
+</head>
+<body>
+  <h1>OSN Dataset Connection Test</h1>
+  <pre id="result">Testing connection...</pre>
+
+  <script>
+    const url =
+      "https://rice1.osn.mghpcc.org/gb35" +
+      "?list-type=2" +
+      "&prefix=train_data%2Fobject-paste%2F000001%2F" +
+      "&delimiter=%2F";
+
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(xml => {
+        const document = new DOMParser().parseFromString(
+          xml,
+          "application/xml"
+        );
+
+        const files = [
+          ...document.getElementsByTagNameNS("*", "Contents")
+        ].map(item => {
+          const key = item.getElementsByTagNameNS("*", "Key")[0];
+          return key?.textContent;
+        }).filter(Boolean);
+
+        document.getElementById("result").textContent =
+          "Connection successful!\n\nFiles:\n" +
+          files.join("\n");
+      })
+      .catch(error => {
+        document.getElementById("result").textContent =
+          "Connection failed:\n" + error.message +
+          "\n\nCheck the browser console for CORS errors.";
+      });
+  </script>
+</body>
+</html>
